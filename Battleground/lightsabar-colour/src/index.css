@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 35px;
+}
+
+body{
+  min-height: 100%;
+  font-family:'Times New Roman', Times, serif;
+
+}
+header {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App{
+  min-height: 100vh;
+  display: flex; /*this will make all the elements to come one row*/
+  flex-direction: column; /* now they will in column*/
+  justify-content: center; /* this make the content in the center of the column */
+  align-items: center; /*Now they are in perfact center of the screen*/
+}
+
+/*Now we will style the box*/
+.square{
+  height: 350px;
+  width: 350px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px #000;
+  border-radius: 0.26rem;
+  display: grid;
+  place-content: center;
+}
+
+.square p {
+  text-align: center;
+}
+
+form{
+  width: 350px;
+}
+
+label {
+  position: absolute;
+  left: -99999px;
+}
+
+input[type="text"]{
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+  width: 100%;
+  font-size: 1rem;
+  border: 2px solid #000;
+  box-shadow: 1px 1px 5px #000;
+  border-radius: 0.26rem;
+  outline: none;
+}
+
+button{
+  width: 100%;
+  min-height: 48px;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 1px 1px 5px #000;
+  padding: 0.25rem;
+}
